@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.skilldistillery.climblog.Climb;
+import com.skilldistillery.climblog.entities.Climb;
 
 class ClimbTest {
 	private static EntityManagerFactory emf;

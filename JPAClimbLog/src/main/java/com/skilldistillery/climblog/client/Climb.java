@@ -1,4 +1,4 @@
-package com.skilldistillery.climblog;
+package com.skilldistillery.climblog.client;
 
 import java.time.LocalDateTime;
 
