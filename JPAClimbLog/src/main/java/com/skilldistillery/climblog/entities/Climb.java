@@ -1,5 +1,6 @@
 package com.skilldistillery.climblog.entities;
 
+import java.sql.Date;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -16,7 +17,7 @@ public class Climb {
 
 	private String zone;
 
-	private LocalDateTime date;
+	private Date date;
 	
 	private String type;
 	
@@ -58,21 +59,15 @@ public class Climb {
 		this.zone = zone;
 	}
 
-	public LocalDateTime getdate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setdate(LocalDateTime date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public LocalDateTime getDate() {
-		return date;
-	}
 
-	public void setDate(LocalDateTime date) {
-		this.date = date;
-	}
 
 	public String getType() {
 		return type;

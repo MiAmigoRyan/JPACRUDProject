@@ -20,10 +20,11 @@
 		
 			<form action="addClimb.do" method="POST">
 		
-				name<input type="text" name="name"> <br> 
+				name<input type="text" name="name" required> <br> 
 				zone<input type="text" name="zone"> <br>
 				grade<input type="text" name="grade"> <br> 
-				date<input type="date" name="date"> <br> 
+				date<input type="date" name="date" required> <br> 
+				<label>protection</label>
 				<select name="dropdown">
 					<option value="pads">pads</option>
 					<option value="traditional">traditional</option>
@@ -34,6 +35,8 @@
 					<input type="radio" name="rating" value= 2 ${climb.rating == 2 }>&#x2B50; &#x2B50; 
 					<input type="radio" name="rating" value= 3 ${climb.rating == 3 }>&#x2B50; &#x2B50; &#x2B50;
 					<br>
+				first ascentionist<input type='text' name='first_ascentionist'><br>	
+				insert image<input type='text' name='image'><br>	
 				<input type="submit" name='climb' value="ADD CLIMB">
 			</form>
 		</div>
