@@ -17,7 +17,6 @@
 	
 	<h1>${climb.name } | ${climb.grade } </h1>	
 	
-	<h2>${climb.rating }</h2>
 	<c:choose>
 	 <c:when test="${climb.rating == 1 } ">
     	<p>&#11088;</p>
@@ -25,37 +24,22 @@
 	 <c:when test="${climb.rating == 2 }  ">
     	<p>&#11088;&#11088;</p>
 	</c:when>
-	 <c:otherwise>
+	 <c:when test='${calimb.rating == 3 }'>
     	<p>&#11088;&#11088;&#11088;</p>
+    	</c:when>
+    	<c:otherwise>
+    	not yet rated
 	</c:otherwise>
 	</c:choose>
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</h5>
-	<h5>${climb.protection } </h5>
+	<div class ='container'>
+	<h5>protection ${climb.protection } </h5>
+	</div>
+	<div class ='container'>
 	<h5>${climb.firstAscentionist} </h5>
+	</div>
+	<div class ='container'>
 	<blockquote> ${climb.notes}</blockquote>
+	</div>
 	
 	<form action="goToUpdateClimb.do" >
 	<input type='hidden' name='id' value='${climb.id }' />

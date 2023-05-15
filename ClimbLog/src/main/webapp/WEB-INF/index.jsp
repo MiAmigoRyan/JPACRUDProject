@@ -36,6 +36,7 @@
 					<input type="radio" name="rating" value= 3 ${climb.rating == 3 }>&#x2B50; &#x2B50; &#x2B50;
 					<br>
 				first ascentionist<input type='text' name='first_ascentionist'><br>	
+				
 				insert image<input type='text' name='image'><br>	
 				<input type="submit" name='climb' value="ADD CLIMB">
 			</form>
@@ -52,7 +53,6 @@
 			<input type="submit">
 				</form>
 			</div>	
-	
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
@@ -69,6 +69,7 @@
 				</c:forEach>
 				</tbody>
 				</table>
+	
 	</body>
 
 	<jsp:include page="BootstrapFoot.jsp"></jsp:include>

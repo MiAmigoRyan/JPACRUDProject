@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <jsp:include page="/WEB-INF/BootstrapHead.jsp"></jsp:include>
 
-<title>invalid</title>
+<title>Update</title>
 </head>
 <jsp:include page="../navbar.jsp"/>
 <div class="container">
@@ -39,6 +39,8 @@
 				first acentionist<input type="text" name="firstAscentionist" value='${climb.firstAscentionist }'> <br> 
 				date<input type="date" name="date" value='${climb.date }'> <br> 
 				grade<input type="text" name="grade" value='${climb.grade }'> <br> 
+				upload image<input type="text" name="img" value='${climb.grade }'> <br> 
+				
 				
 			
 				<input type="submit" value="UPDATE">
